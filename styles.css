@@ -1,0 +1,105 @@
+/* Selectores por etiqueta: para todos los encabezados h1 a h6 */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #007bff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Selector por etiqueta: aplica a todos los <div> */
+div {
+    color: rgb(0, 0, 0);
+}
+
+/* Selector por imagen */
+.image-container {
+  text-align: center;
+}
+/* Selector por clase: .highlight */
+.highlight {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* Selector por ID: #special */
+#special {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* Selector por etiqueta: para todo el cuerpo de la página */
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* Clase .box: para dar formato a recuadros de texto */
+.box {
+    text-align: center;
+    background-color: rgb(247, 248, 250);
+    border: 2px solid #487ac5;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Clase .content: cuadro con ancho y borde definidos */
+.content {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 5px solid #487ac5;
+}
+
+/* Caja en línea con dimensiones específicas */
+.inline-box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Caja fija en la pantalla (se mantiene aunque hagas scroll) */
+.fixed-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+/* Caja con transformación (inclinación) */
+.rotate-box {
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: #487ac5;
+    transform: skew(160deg);
+}
+
+/* Pseudoclase para cuando pasas el mouse sobre un enlace */
+a:hover {
+    color: rgb(205, 236, 30);
+    text-decoration: none; /* Corrección aplicada */
+}
+
+/* Pseudoelemento para añadir texto antes de .box */
+.box::before {
+    content: "New!";
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+}
+
+.fade-in{
+    animation: fade 2s ease-in-out;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
